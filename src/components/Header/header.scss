@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+// ------ Header
+.table-header {
+  background-color: $header-bg-color;
+  color: $light-color;
+  padding: 25px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerColumns {
+      .btn-btnAdd {
+        flex: 1;
+        margin-left: 5px;
+      }
+      .btn-btnDelete {
+        flex: 1;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.title {
+  @include font-size(2)
+}
